@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 1.75rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 345px;
+  border-radius: 0.75rem;
+  background-color: hsl(217, 19%, 24%);
+  padding: 1rem 1.25rem;
+  box-shadow: 0.7rem 0.25rem 1rem #00000020;
+  transition: 1s ease-in-out;
+
+}
+
+h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.25rem;
+  color: hsl(150, 100%, 66%);
+  margin: 1.5rem 0;
+  transition: 0.3s ease-in-out;
+
+}
+
+#advice_text {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.55rem;
+  text-align: center;
+}
+
+.divider_container {
+  margin-top: 0.7rem;
+  margin-bottom: 2.25rem;
+}
+
+.dice_container {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  bottom: -2rem;
+  background-color: hsl(150, 100%, 66%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.dice_container:hover {
+  box-shadow: 0 0 2rem hsl(150, 100%, 66%);
+}
+
+@media (min-width: 800px) {
+  .card {
+    width: 545px;
+    padding: 1rem 1.6rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  #advice_text {
+    font-size: 1.75rem;
+  }
+}
